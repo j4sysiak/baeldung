@@ -9,112 +9,23 @@
     <packaging>war</packaging>
     <description>Spring Boot Rest Module</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <start-class>com.baeldung.SpringBootRestApplication</start-class>
-        <xstream.version>1.4.11.1</xstream.version>
-        <modelmapper.version>3.1.0</modelmapper.version>
-    </properties>
-
-<!--    <parent>-->
-<!--        <groupId>com.baeldung</groupId>-->
-<!--        <artifactId>parent-boot-2</artifactId>-->
-<!--        <version>0.0.1-SNAPSHOT</version>-->
-<!--        <relativePath>../parent-boot-2</relativePath>-->
-<!--    </parent>-->
-
     <parent>
         <groupId>org.springframework.boot</groupId>
+        <version>2.7.6</version>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
-<!--    <parent>-->
-<!--        <groupId>com.baeldung.</groupId>-->
-<!--        <artifactId>parent-boot-2</artifactId>-->
-<!--        <version>3.0.0</version>-->
-<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--    </parent>-->
 
-<!--    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-        </dependency>
-        &lt;!&ndash; We'll need to comment out the jackson-dataformat-xml dependency if we want to use XStream: &ndash;&gt;
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-oxm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>${xstream.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
-        </dependency>
-        &lt;!&ndash; Spring HATEOAS &ndash;&gt;
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-hateoas</artifactId>
-        </dependency>
-        &lt;!&ndash; util &ndash;&gt;
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>${modelmapper.version}</version>
-        </dependency>
-    </dependencies>-->
+    <properties>
+        <java.version>17</java.version>
+        <start-class>com.baeldung.SpringBootRestApplication</start-class>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>${modelmapper.version}</version>
+            <version>2.7.2</version>
         </dependency>
     </dependencies>
 

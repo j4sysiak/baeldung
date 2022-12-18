@@ -1,13 +1,12 @@
-package com.baeldung;
+package com.example.demo34;
 
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRegistration;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
 
 public class AppInitializer implements WebApplicationInitializer {
 
@@ -27,7 +26,7 @@ public class AppInitializer implements WebApplicationInitializer {
         //The first thing we will need to do is create the application context for the servlet.
         //This time we will use an annotation based context so that we can use Java and annotations for configuration and remove the need for XML files like dispatcher-config.xml:
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(SpringBootRestApplication.class);
+        context.register(Demo34Application.class);
         context.setConfigLocation("com.baeldung.spring");
         context.scan("com.baeldung");
         container.addListener(new ContextLoaderListener(context));

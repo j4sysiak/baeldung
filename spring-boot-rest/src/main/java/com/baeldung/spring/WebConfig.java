@@ -3,7 +3,6 @@ package com.baeldung.spring;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 //import org.springframework.boot.web.servlet.FilterRegistrationBean;
 //import org.springframework.context.annotation.Bean;
@@ -17,8 +16,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.baeldung.controller")
-public class WebConfig implements WebMvcConfigurer {
+@ComponentScan(basePackages ="com.baeldung.controller")
+public class WebConfig /*implements WebMvcConfigurer*/ {
 
 //    @Override
 //    public void configureMessageConverters(final List<HttpMessageConverter<?>> messageConverters) {

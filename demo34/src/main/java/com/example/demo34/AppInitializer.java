@@ -27,7 +27,7 @@ public class AppInitializer implements WebApplicationInitializer {
         //This time we will use an annotation based context so that we can use Java and annotations for configuration and remove the need for XML files like dispatcher-config.xml:
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
         context.register(Demo34Application.class);
-        context.setConfigLocation("com.baeldung.spring");
+        context.setConfigLocation("com.baeldung");
         context.scan("com.baeldung");
         container.addListener(new ContextLoaderListener(context));
 
